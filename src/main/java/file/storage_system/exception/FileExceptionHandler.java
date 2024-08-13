@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+@ControllerAdvice
 public class FileExceptionHandler {
     @ExceptionHandler(EmptyFileException.class)
     public ResponseEntity<?> emptyFileException(EmptyFileException exception){
