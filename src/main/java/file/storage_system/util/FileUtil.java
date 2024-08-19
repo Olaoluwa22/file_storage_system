@@ -1,11 +1,14 @@
 package file.storage_system.util;
 
+import org.springframework.stereotype.Component;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
+@Component
 public class FileUtil {
 
     public static byte[] compressFile(byte[] data){
